@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import { BsGraphUp } from "react-icons/bs";
 import { IoMdTime } from "react-icons/io";
 import { RiHome2Line } from "react-icons/ri";
@@ -42,7 +41,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl"><span>Keen</span><span className="text-green-900 font-light">Keeper</span></a>
         </div>
         <div className="navbar-center hidden lg:flex">
         </div>

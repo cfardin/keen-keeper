@@ -1,11 +1,13 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./component/Navbar";
+import HeroBanner from "./component/HeroBanner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -25,6 +27,7 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <Navbar></Navbar>
+        <HeroBanner></HeroBanner>
         {children}
       </body>
     </html>
