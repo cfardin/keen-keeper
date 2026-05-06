@@ -1,12 +1,12 @@
 import HeroBanner from "@/component/HeroBanner";
 import NumberCards from "@/component/NumberCards";
 import React from "react";
-import FriendsCard from "./Friends/FriendsCard";
+import FriendsCard from "../component/FriendsCard";
+import friends from "../../public/friendsData.json";
 
-const HomePage = async () => {
-  const res = await fetch("http://localhost:3000/friendsData.json");
-  const friends = await res.json();
 
+
+const HomePage = () => {
   console.log(friends);
   return (
     <div>

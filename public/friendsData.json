@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Anna Yamada",
-    "picture": "https://i.ibb.co.com/hJHwqrrF/anna-yamada.png",
+    "picture": "https://i.ibb.co.com/FL6g4gW7/annayamada.jpg",
     "email": "yamada.anna@example.com",
     "days_since_contact": 2,
     "status": "on-track",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Kiyotaka Ayanokoji",
-    "picture": "https://i.ibb.co.com/d4fpN5Rz/ayanokoji.jpg",
+    "picture": "https://i.ibb.co.com/JWqgwJQx/ayanokoji.jpg",
     "email": "ayanokoji.k@example.com",
     "days_since_contact": 28,
     "status": "almost due",
@@ -24,21 +24,9 @@
     "next_due_date": "2026-05-20"
   },
   {
-    "id": 3,
-    "name": "Houtarou Oreki",
-    "picture": "https://i.ibb.co.com/9HzmfzfF/houtarouoreki.png",
-    "email": "oreki.h@example.com",
-    "days_since_contact": 65,
-    "status": "overdue",
-    "tags": ["energy saver", "detective"],
-    "bio": "Lives by the motto: 'If I don't have to do it, I won't. If I have to do it, I'll make it quick.'",
-    "goal": 60,
-    "next_due_date": "2026-06-01"
-  },
-  {
     "id": 4,
     "name": "Kyotaro Ichikawa",
-    "picture": "https://i.ibb.co.com/SwVXnXBM/ichikawa.jpg",
+    "picture": "https://i.ibb.co.com/7NKNhzwH/ichikawa.jpg",
     "email": "ichikawa.k@example.com",
     "days_since_contact": 5,
     "status": "on-track",
@@ -50,7 +38,7 @@
   {
     "id": 5,
     "name": "Light Yagami",
-    "picture": "https://i.ibb.co.com/FLzQz4T9/light-yagami.jpg",
+    "picture": "https://i.ibb.co.com/nqwSq1k0/light-yagami.jpg",
     "email": "kira@example.com",
     "days_since_contact": 0,
     "status": "on-track",
@@ -62,7 +50,7 @@
   {
     "id": 6,
     "name": "Hachiman Hikigaya",
-    "picture": "https://i.ibb.co.com/shcwFd9/hachiman-hikigaya.jpg",
+    "picture": "https://i.ibb.co.com/cpmr1j8/hachiman-hikigaya.jpg",
     "email": "hachiman.h@example.com",
     "days_since_contact": 25,
     "status": "overdue",
@@ -74,7 +62,7 @@
   {
     "id": 7,
     "name": "L Lawliet",
-    "picture": "https://i.ibb.co.com/NdPdfFCJ/L-Lawliet.jpg",
+    "picture": "https://i.ibb.co.com/NnJ30J74/L-Lawliet.jpg",
     "email": "watari@example.com",
     "days_since_contact": 2,
     "status": "almost-due",
@@ -98,7 +86,7 @@
   {
     "id": 9,
     "name": "Maki Zenin",
-    "picture": "https://i.ibb.co.com/RTvWKMk1/maki.jpg",
+    "picture": "https://i.ibb.co.com/RpQHM1qz/maki.jpg",
     "email": "zenin.m@example.com",
     "days_since_contact": 9,
     "status": "almost-due",
@@ -142,18 +130,6 @@
     "bio": "A student at Chidori High who looks intimidating but is actually incredibly kind and hardworking at his family's cake shop.",
     "goal": 14,
     "next_due_date": "2026-05-13"
-  },
-  {
-    "id": 13,
-    "name": "Subaru Hoshina",
-    "picture": "https://i.ibb.co.com/gFF92ztz/subaru-hoshina.jpg",
-    "email": "hoshina.s@example.com",
-    "days_since_contact": 15,
-    "status": "overdue",
-    "tags": ["protective", "studious"],
-    "bio": "A student at Kikyo Girls' High and Kaoruko's best friend. She is initially very protective and wary of boys from Chidori.",
-    "goal": 10,
-    "next_due_date": "2026-05-12"
   },
   {
     "id": 14,

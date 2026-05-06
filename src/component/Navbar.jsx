@@ -1,9 +1,39 @@
+"use client";
 import Link from "next/link";
+import { useState } from "react";
 import { BsGraphUp } from "react-icons/bs";
 import { IoMdTime } from "react-icons/io";
 import { RiHome2Line } from "react-icons/ri";
 
 const Navbar = () => {
+
+  const [active, setActive] = useState("home");
+
+  const btnColor = (name) => 
+    `btn ${active === name ? "bg-green-900 text-white" : ""}`;
+
+
+  const links = <>
+    <Link href="/"  onClick={() => setActive("home")}>
+              <button className={btnColor("home")}>
+                <RiHome2Line />
+                Home
+              </button>
+            </Link>
+            <Link href="/timeline" onClick={() => setActive("timeline")}>
+              <button className={btnColor("timeline")}>
+                <IoMdTime />
+                Timeline
+              </button>
+            </Link>
+            <Link href="/stats" onClick={() => setActive("stats")}>
+              <button className={btnColor("stats")}>
+                <BsGraphUp />
+                Stats
+              </button>
+            </Link>
+  </>
+
   return (
     <div className="md:container md:mx-auto">
       <div className="navbar shadow-sm ">
@@ -30,25 +60,19 @@ const Navbar = () => {
               tabIndex="-1"
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li>
-                <button className="btn bg-green-900"><RiHome2Line />Home</button>
-              </li>
-              <li>
-                <button className="btn"><IoMdTime/>Timeline</button>  
-              </li>
-              <li>
-                <button className="btn"><BsGraphUp/>Stats</button>
-              </li>
+              {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl"><span>Keen</span><span className="text-green-900 font-light">Keeper</span></a>
+          <a className="btn btn-ghost text-xl">
+            <span>Keen</span>
+            <span className="text-green-900 font-light">Keeper</span>
+          </a>
         </div>
-        <div className="navbar-center hidden lg:flex">
-        </div>
+        <div className="navbar-center hidden lg:flex"></div>
         <div className="navbar-end hidden lg:flex gap-6">
-          <button className="btn bg-green-900"><RiHome2Line />Home</button>
-          <button className="btn"><IoMdTime/>Timeline</button>
-          <button className="btn"><BsGraphUp/>Stats</button>
+          <div className="navbar-end hidden lg:flex gap-6">
+            {links}
+          </div>
         </div>
       </div>
     </div>
