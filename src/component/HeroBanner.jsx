@@ -17,7 +17,7 @@ const HeroBanner = () => {
 
         {/* add friend button */}
       <div className="flex justify-center items-center">
-        <button className="btn bg-green-900">Add Friend</button>
+        <button className="btn bg-green-900 text-white">Add Friend</button>
       </div>
     </div>
   );

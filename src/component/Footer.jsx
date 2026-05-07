@@ -7,12 +7,12 @@ const Footer = () => {
 
       {/* title */}
       <div className="mb-6">
-        <h1 className="text-6xl font-bold mt-15 mb-4">KeenKeeper</h1>
-        <p>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
+        <h1 className="text-white text-6xl font-bold mt-15 mb-4">KeenKeeper</h1>
+        <p className="text-white">Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
       </div>
 
       {/* social */}
-      <div className="space-y-3">
+      <div className="space-y-3 text-white">
         <h3 className="text-[20px] font-medium">Social Links</h3>
         <div className="flex gap-3">
           <FaInstagram className="text-3xl" />
@@ -22,7 +22,7 @@ const Footer = () => {
       </div>
 
       {/* bottom part */}
-      <div className="flex flex-wrap justify-between items-center w-full px-10 py-5 border-t border-white/10">
+      <div className="flex flex-wrap justify-between items-center w-full px-10 py-5 border-t border-white/10 text-white">
         <p>© 2026 KeenKeeper. All rights reserved.</p>
         <ul className="flex gap-5">
           <li>Privacy Policy</li>
