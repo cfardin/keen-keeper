@@ -63,10 +63,10 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">
+          <Link href="/" className="btn btn-ghost text-xl">
             <span>Keen</span>
             <span className="text-green-900 font-light">Keeper</span>
-          </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex"></div>
         <div className="navbar-end hidden lg:flex gap-6">

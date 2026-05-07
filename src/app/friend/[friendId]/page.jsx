@@ -7,6 +7,7 @@ import { MdDeleteOutline } from "react-icons/md";
 import { useContext } from "react";
 import { FriendsContext } from "@/context/ProfileContext";
 import { use } from "react";
+import { toast } from "react-toastify";
 
 const statColor = {
   "on-track": "bg-green-700",
@@ -144,20 +145,20 @@ const FriendPage = ({ params }) => {
           <h3 className="font-semibold mb-3">Quick Check-In</h3>
           <div className="grid grid-cols-3 gap-4">
             <button
-              onClick={() => handleTimeline("call", name)}
+              onClick={() => {handleTimeline("call", name); toast(`Call to ${name}`)}}
               className="btn btn-outline flex flex-col gap-1 h-auto py-4"
             >
               <IoCallOutline className="text-2xl"></IoCallOutline> Call
             </button>
             <button
-              onClick={() => handleTimeline("text", name)}
+              onClick={() => {handleTimeline("text", name); toast(`Text to ${name}`)}}
               className="btn btn-outline flex flex-col gap-1 h-auto py-4"
             >
               <FaEnvelopeOpenText className="text-2xl"></FaEnvelopeOpenText>{" "}
               Text
             </button>
             <button
-              onClick={() => handleTimeline("video", name)}
+              onClick={() => {handleTimeline("video", name); toast(`Video to ${name}`)}}
               className="btn btn-outline flex flex-col gap-1 h-auto py-4"
             >
               <IoVideocamOutline className="text-2xl"></IoVideocamOutline> Video

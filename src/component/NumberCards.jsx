@@ -2,7 +2,7 @@ import React from 'react';
 
 const NumberCards = () => {
     return (
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-6 md:w-10/12 mx-auto justify-items-center'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-6 md:w-10/12 mx-auto justify-items-center mb-10'>
             {/* cards */}
             <div className='text-center items-center bg-base-100 p-8 rounded-lg w-full max-w-60'>
                 <h2 className='text-3xl font-semibold'>12</h2>
