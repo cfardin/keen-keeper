@@ -3,7 +3,8 @@ import "../globals.css";
 import HeroBanner from "@/component/HeroBanner";
 import Navbar from "@/component/Navbar";
 import Footer from "@/component/Footer";
-import { createContext } from "react";
+import ProfileContext from "@/context/ProfileContext";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,9 +33,12 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Navbar></Navbar>
-        {children}
-        <Footer></Footer>
+        <ProfileContext>
+          <Navbar></Navbar>
+            {children}
+          <Footer></Footer>
+        </ProfileContext>
+        
       </body>
     </html>
   );

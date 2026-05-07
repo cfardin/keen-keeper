@@ -12,7 +12,6 @@ const HomePage = () => {
     <div>
       <HeroBanner></HeroBanner>
       <NumberCards></NumberCards>
-      <h1>This is home page</h1>
       <div className="border-t border-base-200 md:w-10/12 mx-auto">
         <h2 className="text-2xl font-semibold mt-10 mb-4">Your Friends</h2>
 
