@@ -1,8 +1,11 @@
+"use client"
+import Chart from "./Chart";
 
 const StatsPage = () => {
     return (
-        <div>
-            <h1>This is stats page</h1>
+        <div className="md:w-10/12 mx-auto my-20 space-y-6">
+            <h1 className="text-5xl font-bold ">Friendship Analytics</h1>
+            <Chart></Chart>
         </div>
     );
 };
