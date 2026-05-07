@@ -13,7 +13,7 @@ const TimeLineCard = ({t}) => {
 
     const config = typeConfig[t.type];
     return (
-          <div className="bg-base-100 rounded-xl px-5 py-4 flex items-center gap-4">
+          <div className="bg-base-200 rounded-xl px-5 py-4 flex items-center gap-4 w-full shadow-2xl">
             <div className="text-gray-500">{config.icon}</div>
             <div>
                 <p className="text-sm">
